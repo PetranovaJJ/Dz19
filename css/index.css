@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    margin: auto;
+    font-style: normal;
+    font-size: 16px;
+}
+.header{
+    display: flex;
+    margin-top: 10px;
+}
+.logo{
+    width: 200px;
+    margin-left: 50px;
+}
+.container {
+    max-width: 1370px;
+    padding: 0 15px;
+}
+.header__inner{
+    display: flex;
+    align-items: center;
+}
+.menu__item {
+    display: flex;
+    padding: 0 20px;
+    list-style: none;
+    text-transform: uppercase;
+
+}
+.menu__list{
+    list-style: none;
+    display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 0;
+}
+
+.header__button {
+    margin-right: 50px;
+    padding: 15px 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #fac0ce;
+    border: none;
+    text-decoration: none;
+}
+.menu__link{
+    transition: all 3s;
+    padding: 15px 20px;
+}
+.menu__link:hover{
+    background-color: #fac0ce;
+}
+.banner{
+    background: #a1e1eb;
+    display: flex;
+
+}
+
+.banner__title{
+    color: white;
+    text-transform: uppercase;
+    max-width: 512px;
+    font-size: 31px;
+    padding-top: 80px;
+    padding-left: 116px;
+
+}
+.banner__button {
+    margin-right: 50px;
+    padding: 25px 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #fac0ce;
+    border: none;
+    text-decoration: none;
+    margin-left: 116px;
+
+}
+.catalog{
+    padding: 50px 0;
+
+}
+.swiper-slide{
+    text-align: center;
+}
+.catalog__title{
+    background: #fac0ce;
+    padding: 25px 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.gallery{
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+.gallery__title {
+    background: #fac0ce;
+    padding: 25px 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.title{
+    background: #fac0ce;
+    padding: 25px 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.grid-sizer,
+.grid-item {
+    width: 33.3%;
+}
+.grid-item {
+    padding: 5px;
+}
+.grid-item img{
+    max-width: 100%;
+}

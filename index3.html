@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.js"
+            integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl/owl.theme.default.min.css">
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link type = "text/css" rel = "stylesheet" href = "magiczoom/magiczoom.css" />
+    <link rel="stylesheet" href="./css/index3.css">
+    <title>Owl&Lightbox&Zoom</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a href="#">
+                <img class="logo" src="img/ip%20(1)...png" alt="logo">
+            </a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Доставка</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Контакты</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Отзывы</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__button">
+                <a href="#">Каталог</a>
+            </button>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="banner">
+        <div class="container">
+            <div class="banner__title">
+                <h1>Сделай заказ на цветочную композицию до конца месяца и получи скидку 10%</h1>
+            </div>
+            <button class="banner__button">
+                <a href="#">Подробнее</a>
+            </button>
+        </div>
+        <img class="banner__img" src="img/f5.jpg" alt="fon">
+    </section>
+    <section class="catalog">
+        <div class="catalog__title">
+            <h1>Композиции и букеты с живой флористикой</h1>
+        </div>
+        <div class="owl-carousel">
+            <a href="img/f1.jpg" class = "MagicZoom" data-lightbox="lbox"><img src="img/f1.jpg" alt=""></a>
+            <a href="img/f2.jpg" class = "MagicZoom" data-lightbox="lbox"><img src="img/f2.jpg" alt=""></a>
+            <a href="img/f3.jpg" class = "MagicZoom" data-lightbox="lbox"><img src="img/f3.jpg" alt=""></a>
+            <a href="img/f4.jpg" class = "MagicZoom" data-lightbox="lbox"><img src="img/f4.jpg" alt=""></a>
+            <a href="img/f6.jpg" class = "MagicZoom" data-lightbox="lbox"><img src="img/f6.jpg" alt=""></a>
+            <a href="img/f7.jpg" class = "MagicZoom" data-lightbox="lbox"><img src="img/f7.jpg" alt=""></a>
+        </div>
+    </section>
+</main>
+<script src="owl/jquery.min.js"></script>
+<script src="owl/owl.carousel.min.js"></script>
+<script type = "text/javascript" src = "magiczoom/magiczoom.js" ></script>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items: 3,
+            margin: 50,
+            loop: true,
+            startPosition: 4,
+        });
+    });
+    // lightbox
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'disableScrolling': true,
+        'fitImagesInViewport': true,
+        'imageFadeDuration': 600,
+    })
+</script>
+
+

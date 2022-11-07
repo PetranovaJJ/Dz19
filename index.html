@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.js"
+            integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Swiper&Lightbox&Masonry</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a href="#">
+                <img class="logo" src="img/ip%20(1)...png" alt="logo">
+            </a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Доставка</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Контакты</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Отзывы</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__button">
+                <a href="#">Каталог</a>
+            </button>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="banner">
+        <div class="container">
+            <div class="banner__title">
+                <h1>Сделай заказ до конца года и получи скидку 10%</h1>
+            </div>
+            <button class="banner__button">
+                <a href="#">Подробнее</a>
+            </button>
+        </div>
+        <img class="banner__img" src="img/fon%201.jpg" alt="fon">
+    </section>
+    <section class="catalog">
+        <div class="catalog__title">
+            <h1>Специальное предложение</h1>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/5.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/6.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/7.jpg" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="gallery__title">
+            <h1>Фотозоны из шаров</h1>
+        </div>
+        <a href="img/gallery_61.jpg" data-lightbox="lbox"><img src="img/gallery_6.jpg" alt=""></a>
+        <a href="img/images%20021.jpg" data-lightbox="lbox"><img src="img/images%2002.jpg" alt=""></a>
+        <a href="img/images%20031.jpg" data-lightbox="lbox"><img src="img/images%2003.jpg" alt=""></a>
+        <a href="img/images%20041.jpg" data-lightbox="lbox"><img src="img/images%2004.jpg" alt=""></a>
+        <a href="img/images%20051.jpg" data-lightbox="lbox"><img src="img/images%2005.jpg" alt=""></a>
+        <a href="img/images%20061.jpg" data-lightbox="lbox"><img src="img/images%2006.jpg" alt=""></a>
+    </section>
+    <section class="page">
+        <h1 class="title">Популярные наборы</h1>
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="grid-item"><img src="img/m3.jpg" alt=""></div>
+            <div class="grid-item"><img src="img/m2.jpg" alt=""></div>
+            <div class="grid-item"><img src="img/m4.jpg" alt=""></div>
+            <div class="grid-item"><img src="img/m5.jpg" alt=""></div>
+            <div class="grid-item"><img src="img/m6.jpg" alt=""></div>
+            <div class="grid-item"><img src="img/m7.jpg" alt=""></div>
+            <div class="grid-item"><img src="img/m8.png" alt=""></div>
+            <div class="grid-item"><img src="img/m9.jpg" alt=""></div>
+            <div class="grid-item"><img src="img/m10.jpg" alt=""></div>
+            <div class="grid-item"><img src="img/m11.jpg" alt=""></div>
+            <div class="grid-item"><img src="img/m12.jpg" alt=""></div>
+            <div class="grid-item"><img src="img/m13.jpg" alt=""></div>
+            <div class="grid-item"><img src="img/m14.jpg" alt=""></div>
+            <div class="grid-item"><img src="img/m15.jpg" alt=""></div>
+            <div class="grid-item"><img src="img/m17.jpg" alt=""></div>
+            <div class="grid-item"><img src="img/m18.jpg" alt=""></div>
+        </div>
+    </section>
+
+</main>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+</body>
+</html>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            type: 'bullets',
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+    lightbox.option({
+        'resizeDuration': 300,
+        'wrapAround': true,
+    })
+</script>
+<script>
+    $(window).on('load', () => {
+        $('.grid').masonry({
+            // options
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            percentPosition: true
+        });
+    })
+</script>
+
+
